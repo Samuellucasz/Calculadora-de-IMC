@@ -19,21 +19,22 @@ function App() {
     }
 
     const imc = pesoNumerico / (alturaNumerica * alturaNumerica)
+    const imcArredondado = Number(imc.toFixed(2))
 
     let classificacao = ''
 
-    if (imc < 18.5) {
+    if (imcArredondado < 18.5) {
       classificacao = 'Abaixo do peso'
-    } else if (imc < 25) {
+    } else if (imcArredondado < 25) {
       classificacao = 'Peso normal'
-    } else if (imc < 30) {
+    } else if (imcArredondado < 30) {
       classificacao = 'Sobrepeso'
     } else {
       classificacao = 'Obesidade'
     }
 
     setResultado({
-      imc: imc,
+      imc: imcArredondado,
       classificacao: classificacao
     })
   }

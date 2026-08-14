@@ -1,6 +1,6 @@
 function TabelaIMC() {
   return (
-    <div>
+    <div className="tabela">
       <h2>Classificação do IMC</h2>
 
       <p>Abaixo de 18,5: Abaixo do peso</p>

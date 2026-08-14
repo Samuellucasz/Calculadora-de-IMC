@@ -1,14 +1,14 @@
 function ResultadoIMC({ resultado }) {
   if (resultado === null) {
     return (
-      <div>
+      <div className="resultado">
         <p>Informe seu peso e sua altura para calcular o IMC.</p>
       </div>
     )
   }
 
   return (
-    <div>
+    <div className="resultado">
       <h2>Resultado</h2>
 
       <p>

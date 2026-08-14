@@ -39,7 +39,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="app">
       <FormularioIMC
         peso={peso}
         setPeso={setPeso}
@@ -51,7 +51,7 @@ function App() {
       <ResultadoIMC resultado={resultado} />
 
       <TabelaIMC />
-    </>
+    </div>
   )
 }
 

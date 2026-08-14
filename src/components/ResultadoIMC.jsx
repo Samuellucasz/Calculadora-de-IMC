@@ -1,7 +1,23 @@
-function ResultadoIMC() {
+function ResultadoIMC({ resultado }) {
+  if (resultado === null) {
+    return (
+      <div>
+        <p>Informe seu peso e sua altura para calcular o IMC.</p>
+      </div>
+    )
+  }
+
   return (
     <div>
-      Resultado aparecerá aqui
+      <h2>Resultado</h2>
+
+      <p>
+        Seu IMC é: {resultado.imc.toFixed(2)}
+      </p>
+
+      <p>
+        Classificação: {resultado.classificacao}
+      </p>
     </div>
   )
 }
